@@ -1,55 +1,91 @@
-/* PostUser.css */
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-.form-container {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to right, #e0f7fa, #fce4ec);
-  min-height: 90vh;
+}
+
+/* Form Container */
+.form-container {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
+  padding: 20px;
 }
 
+/* Form Box */
 .form-box {
   background-color: white;
-  padding: 40px;
+  padding: 2.5rem;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
 }
 
+/* Heading */
 .form-box h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
   color: #333;
+  font-size: 1.5rem;
 }
 
+/* Label */
 .form-box label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   font-weight: 500;
   color: #555;
 }
 
+/* Input Fields */
 .form-box input {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
   border: 1px solid #ccc;
   border-radius: 6px;
+  font-size: 1rem;
 }
 
+/* Submit Button */
 .form-box button {
   width: 100%;
-  padding: 12px;
+  padding: 0.75rem;
   background-color: #1976d2;
   color: white;
   font-weight: bold;
   border: none;
   border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
   cursor: pointer;
 }
 
 .form-box button:hover {
   background-color: #1565c0;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .form-box {
+    padding: 1.5rem;
+  }
+
+  .form-box h2 {
+    font-size: 1.25rem;
+  }
+
+  .form-box input,
+  .form-box button {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
 }
