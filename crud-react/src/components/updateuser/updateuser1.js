@@ -22,7 +22,7 @@ const UpdateUser = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/user/${id}`);
+        const response = await fetch(`https://crud-app-2-zo8n.onrender.com/api/user/api/user/${id}`);
         const data = await response.json();
         setFormData(data);
       } catch (error) {
