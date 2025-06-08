@@ -24,7 +24,7 @@ const PostUser = () => {
     console.log("Form submitted:", formData);
     setFormData({ name: "", email: "", phone: "" });
     try {
-      const response = await fetch("https://crud-app-2-zo8n.onrender.com/api/user", {
+      const response = await fetch("https://crud-app-3-02ct.onrender.com/api/user", {
         method: "POST",
         headers: {
           "content-Type": "application/json",
