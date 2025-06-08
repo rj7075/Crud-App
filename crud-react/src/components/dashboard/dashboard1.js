@@ -8,7 +8,7 @@ const DashBoard = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/user");
+      const response = await fetch("https://crud-app-2-zo8n.onrender.com/api/user");
       const data = await response.json();
       setUsers(data);
       console.log("user Deleted Successfully");
